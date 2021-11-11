@@ -3,7 +3,7 @@ name: Test-Python
 on:
   push:
     branches:
-      - main
+      - master
       - development
   pull_request:
     branches:
@@ -19,6 +19,6 @@ jobs:
       
       - name: Run Test-Python
         uses: github/actions-testing@v3
-      env:
-        DEFAULT_BRANCH: development
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          DEFAULT_BRANCH: development
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
