@@ -42,4 +42,4 @@ jobs:
           
       - name: Run tests
         run: |
-          if [ -f tests ]; then python -m pytest tests; fi
+          python -m pytest tests
